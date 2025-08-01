@@ -2,7 +2,7 @@
 Built a Flask web app with MySQL that lets students register and admins manage users. It has login, logout, password hashing, and role-based access. Admins can add/delete users, students get a welcome page. Clean UI, secure backend, and fully working auth system.
 
 # Role-Based User Management Web App
-Hey there! This is a simple and functional web app built using **Flask (Python)** and **MySQL**. It supports user login, registration, role-based access control, and a full admin dashboard to manage users.  
+Hey there! This is a simple and functional web app built using Flask (Python) and MySQL. It supports user login, registration, role-based access control, and a full admin dashboard to manage users.  
 
 ## What This App Does
 -  Login & logout functionality  
@@ -13,14 +13,14 @@ Hey there! This is a simple and functional web app built using **Flask (Python)*
 -  Unauthorized access? Boom! Blocked with a 403 Forbidden  
 
 ## Roles
-- **Student:** Can register and see a welcome page  
-- **Admin:** Has full control over users (like a boss)
+- Student: Can register and see a welcome page  
+- Admin: Has full control over users (like a boss)
 
 ## Tech Stack
-- **Backend:** Flask + SQLAlchemy  
-- **Database:** MySQL  
-- **Frontend:** Jinja2 templating (HTML)  
-- **Security:** Flask-Login, Flask-Bcrypt for hashed passwords
+- Backend: Flask + SQLAlchemy  
+- Database: MySQL  
+- Frontend: Jinja2 templating (HTML)  
+- Security: Flask-Login, Flask-Bcrypt for hashed passwords
   
 ## How to Run
 1. Clone this repo  
@@ -35,8 +35,8 @@ Hey there! This is a simple and functional web app built using **Flask (Python)*
 7. Open browser and go to `http://localhost:5000`
    
 ## Default Admin Credentials
-- **Username:** `admin`  
-- **Password:** `admin123`  
+- Username: `admin`  
+- Password: `admin123`  
 *(You can change this in the code after the first login)*
 
 ## Features in Action
@@ -47,9 +47,9 @@ Hey there! This is a simple and functional web app built using **Flask (Python)*
   
 ##  Team Credits
 Big shoutout to the amazing team who made this project possible:
--  **Shivani** — Our sharp and steady **Team Leader**, who made sure we stayed on track even when the code got chaotic.  
--  **Preety** — Always ready with ideas and testing every edge case like a pro.  
--  **Ariba** — Quietly awesome, handled tasks and bugs like a champ.  
+-  Shivani — Our sharp and steady **Team Leader**, who made sure we stayed on track even when the code got chaotic.  
+-  Preety — Always ready with ideas and testing every edge case like a pro.  
+-  Ariba — Quietly awesome, handled tasks and bugs like a champ.  
 
 This project was a team effort, and each one of us added our own spark to it 
 
