@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+            padding-top: 100px;
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 32px;
+        }
+        p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        a {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 24px;
+            background-color: #2980b9;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        a:hover {
+            background-color: #1f6391;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome, {{ user.username }} 👋</h1>
+    <p>Your role is: <strong>{{ user.role }}</strong></p>
+
+    {% if user.role == 'student' %}
+        <p>You are logged in as a student. You can view your profile and access student resources.</p>
+    {% endif %}
+
+    <a href="/logout">Logout</a>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Role Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            margin: 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+        }
+        .admin {
+            background-color: #007BFF;
+        }
+        .student {
+            background-color: #28a745;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Select Your Role to Login</h1>
+    <a class="btn admin" href="/login?role=admin">Login as Admin</a>
+    <a class="btn student" href="/login?role=student">Login as Student</a>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <style>
+    body { font-family: Arial; padding: 20px; background-color: #f0f4f8; }
+    h1 { color: #333; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { padding: 10px; border-bottom: 1px solid #ccc; text-align: left; }
+    a.logout { float: right; padding: 6px 12px; background: red; color: white; border-radius: 6px; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <a class="logout" href="/logout">Logout</a>
+  <h1>Welcome, Admin</h1>
+  <h2>All Registered Users:</h2>
+  <table>
+    <tr><th>ID</th><th>Username</th><th>Role</th></tr>
+    {% for user in users %}
+    <tr>
+      <td>{{ user.id }}</td>
+      <td>{{ user.username }}</td>
+      <td>{{ user.role }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
+

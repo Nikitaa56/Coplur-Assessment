@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ff758c, #ff7eb3);
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .register-box {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+      width: 100%;
+      max-width: 350px;
+      text-align: center;
+    }
+
+    .register-box h2 {
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    .register-box input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .register-box button {
+      width: 100%;
+      padding: 12px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .register-box button:hover {
+      background-color: #218838;
+    }
+
+    .register-box .link {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .register-box .link a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .register-box .link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="register-box">
+    <h2>Register</h2>
+    <form method="POST" action="/register">
+      <input type="text" name="username" placeholder="Choose Username" required>
+      <input type="password" name="password" placeholder="Choose Password" required>
+      <button type="submit">Register</button>
+    </form>
+    <div class="link">
+      Already have an account? <a href="/login">Login here</a>
+    </div>
+  </div>
+</body>
+</html>
